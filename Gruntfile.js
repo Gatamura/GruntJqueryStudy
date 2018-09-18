@@ -24,7 +24,7 @@ module.exports = function(){
         },
         watch: {
             dev: {
-                files: ['public/*.html', 'public/*.css', 'public/*.styl'],
+                files: ['public/*.html', 'public/*.css', 'public/*.styl', 'public/js/*.js'],
                 // tasks: ['browser']
                 tasks: ['stylus:all'],
             },

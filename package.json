@@ -22,6 +22,7 @@
     "grunt-contrib-stylus": "^1.2.0",
     "grunt-parallel": "^0.5.1",
     "grunt-reload": "^0.2.0",
-    "grunt-serve": "^0.1.6"
+    "grunt-serve": "^0.1.6",
+    "jquery": "^3.3.1"
   }
 }
