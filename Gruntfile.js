@@ -6,6 +6,7 @@ module.exports = function(){
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-contrib-stylus');
 
     grunt.initConfig({
 
@@ -23,14 +24,29 @@ module.exports = function(){
         },
         watch: {
             dev: {
-                files: ['public/*.html', 'public/*.css'],
+                files: ['public/*.html', 'public/*.css', 'public/*.styl'],
                 // tasks: ['browser']
+                tasks: ['stylus:all'],
             },
             options: {
                 livereload: true,
                 spawn: true
             }
-        }
+        },
+        stylus: {
+            all: {
+                options: {
+                      paths: ['stylus'],
+
+                      import: [   
+                        'nib/*'
+                      ]
+                    },
+                    files: {
+                      'public/css/style.css': 'public/**.styl', // 1:1 compile
+                    },
+            },
+        },
     });
 
     grunt.registerTask('server', [

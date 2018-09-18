@@ -19,6 +19,7 @@
   "dependencies": {
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
     "grunt-parallel": "^0.5.1",
     "grunt-reload": "^0.2.0",
     "grunt-serve": "^0.1.6"
