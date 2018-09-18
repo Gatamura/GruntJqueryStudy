@@ -1,0 +1,26 @@
+{
+  "name": "estudoGruntJquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3",
+    "matchdep": "^2.0.0"
+  },
+  "dependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-parallel": "^0.5.1",
+    "grunt-reload": "^0.2.0",
+    "grunt-serve": "^0.1.6"
+  }
+}
